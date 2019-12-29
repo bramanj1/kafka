@@ -1,4 +1,4 @@
-## Kafka commands
+## Basic Kafka commands
 
 ### test Zookeeper and Kafka broker registration to the Zookeeper server.
 zookeeper-shell.bat localhost:2181 ls /brokers/ids
