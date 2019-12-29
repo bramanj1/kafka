@@ -4,7 +4,7 @@
 zookeeper-shell.bat localhost:2181 ls /brokers/ids
 
 ### Create a new Kafka topic
-kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic HealthCare
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic topic1
 
 ### Describe a Kafka Topic
 kafka-topics.bat --describe --zookeeper localhost:2181 --topic topic1
