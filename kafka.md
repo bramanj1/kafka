@@ -1,18 +1,18 @@
 ## Basic Kafka commands
 
-### test Zookeeper and Kafka broker registration to the Zookeeper server.
+### Test Zookeeper and Kafka broker registration to the Zookeeper server.
 zookeeper-shell.bat localhost:2181 ls /brokers/ids
 
-### create a new Kafka topic
+### Create a new Kafka topic
 kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic HealthCare
 
-### describe Topic
+### Describe a Kafka Topic
 kafka-topics.bat --describe --zookeeper localhost:2181 --topic topic1
 
-### list the available topics
+### Show the available topics
 kafka-topics.bat --list --zookeeper localhost:2181  
 
-### start a console producer and send some messages 
+### Start a console producer and send some messages 
 kafka-console-producer.bat --broker-list localhost:9092 --topic topic1
 #Publish message from a file
 kafka-console-producer --broker-list localhost:9092 --topic topic1 < C:\Work\camel\test\input.txt
