@@ -14,9 +14,11 @@ kafka-topics.bat --list --zookeeper localhost:2181
 
 ### Start a console producer and send some messages 
 kafka-console-producer.bat --broker-list localhost:9092 --topic topic1
-#Publish message from a file
+
+### Publish message from a file
 kafka-console-producer --broker-list localhost:9092 --topic topic1 < C:\Work\camel\test\input.txt
-#Sending msg with both keys and values, set the --parse.key property to true & --key.separator property to a separator (i.e. comma, semicolon, colon etc.) 
+
+### Sending msg with both keys and values, set the --parse.key property to true & --key.separator property to a separator (i.e. comma, semicolon, colon etc.) 
 kafka-console-producer --broker-list localhost:9092 --topic topic1 --property "parse.key=true" --property "key.separator=:"
 
 ### Read messages from the beginning
